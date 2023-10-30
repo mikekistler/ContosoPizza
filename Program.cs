@@ -1,2 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using ContosoPizza.Data;
+using ContosoPizza.Seed;
+
+using ContosoPizzaContext context = new ContosoPizzaContext();
+
+Seed.SeedProducts(context);
